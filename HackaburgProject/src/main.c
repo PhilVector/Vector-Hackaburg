@@ -7,8 +7,10 @@
 
 #include "arduino_utilities.h"
 #include "actuator.h"
+#include "remote.h"
 int main(int argc, const char *argv[]) {
 	int fdremote = scan_ttyACM(ARD_REMOTE);
+	int fdfront = scan_ttyACM(ARD_FRONT);
 	int fdactor = scan_ttyACM(ARD_ACTOR);
 
 //	while(true){

@@ -37,7 +37,7 @@
 #define KWHT  "\x1B[37m"
 #define RESET "\033[0m"
 
-#define TIMEOUT_MICROS 200000
+#define TIMEOUT_MICROS 2000000
 #define CHAR_PACKET_BUF 100
 #define ARD_FRONT 1
 #define ARD_REAR_US 3
