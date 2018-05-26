@@ -37,7 +37,7 @@
 								<option id="gnu.c.link.option.libs.1048345106" name="Libraries (-l)" superClass="gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="udev"/>
 								</option>
-								<option id="gnu.c.link.option.paths.1474096902" superClass="gnu.c.link.option.paths" valueType="libPaths">
+								<option id="gnu.c.link.option.paths.1474096902" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libs}&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.68104117" superClass="cdt.managedbuild.tool.gnu.c.linker.input">

@@ -22,15 +22,27 @@ int main(int argc, const char *argv[]) {
 
 	if (fdremote != -1) {
 		int ret = read_remote(fdremote, &speed, &steer);
-
+		if (ret == -1) {
+			perror("Error");
+		}
 	}
 
-	if (fdremote != -1) {
+	if (fdactor != -1) {
 		int ret = send_actuator(fdactor, speed, steer);
 		if (ret == -1) {
 			perror("Error");
 		}
 	}
+
+	while(true){
+	if (fdfront != -1) {
+		int ret = read_front(fdfront);
+		if (ret == -1) {
+			perror("Error");
+		}
+	}
+	}
+
 //}
 	return 0;
 }
