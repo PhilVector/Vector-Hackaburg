@@ -5,9 +5,19 @@
  *      Author: virpwa
  */
 
+#include <pthread.h>
+#include <sched.h>
+#include <semaphore.h>
+
 #include "arduino_utilities.h"
 #include "actuator.h"
 #include "remote.h"
+
+
+#define MAX_PRIO (sched_get_priority_min(SCHED_FIFO) + 3)
+
+
+
 int main(int argc, const char *argv[]) {
 	int fdremote = scan_ttyACM(ARD_REMOTE);
 	int fdfront = scan_ttyACM(ARD_FRONT);
