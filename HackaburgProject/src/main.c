@@ -21,6 +21,7 @@
 int main(int argc, const char *argv[]) {
 	int fdremote = scan_ttyACM(ARD_REMOTE);
 	int fdfront = scan_ttyACM(ARD_FRONT);
+	int fdrearimu = scan_ttyACM(ARD_REAR_IMU);
 	int fdactor = scan_ttyACM(ARD_ACTOR);
 
 //	while(true){
